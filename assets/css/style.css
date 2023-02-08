@@ -1,0 +1,23 @@
+/* 
+    SCSS
+    08FEB2023
+    v1.1 
+*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+  color: #3C0459;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=style.css.map */
