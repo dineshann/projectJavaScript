@@ -11,13 +11,45 @@
 body {
   position: relative;
   width: 100%;
+  height: auto;
+  overflow-x: hidden;
   font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
 }
+body .dCard {
+  padding: 1.4rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  border-radius: 0.75rem;
+}
+.flexContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+}
+.flexContainer .flexItem {
+  flex: 0 0 auto;
+  margin: 10px;
+}
 
+header {
+  background-color: #3C0459;
+}
 header h1 {
-  color: #3C0459;
+  color: white;
   font-weight: 600;
+}
+
+.console__title {
+  margin-bottom: 0.5rem;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.console__title h5 {
+  font-size: 0.8rem;
+}
+.console__title h3 {
+  font-size: 2.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
