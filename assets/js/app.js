@@ -86,9 +86,34 @@
 
 
 // LET
-let name;
-name = 'Dinesh B';
-console.log(name);
-// Reassigning
-name = 'Srilatha'
-console.log(name);
+// let name;
+// name = 'Dinesh B';
+// console.log(name);
+// // Reassigning
+// name = 'Srilatha'
+// console.log(name);
+
+// CONST 
+// const name = 'Dinesh';
+// console.log(name);
+// Can not be reassign
+// name = 'Srilatha';
+// Have to assign a value
+// const greeting;
+
+const person = {
+    name: 'Dinesh',
+    age: 30
+}
+
+person.name = 'Srilatha';
+person.age = 22;
+
+// console.log(person);
+
+const numbers = [1,2,3,4,5];
+numbers.push(6,7);
+// we can not declare a brand new array
+// numbers = [1,2,3,4,5,6,7,8];
+
+console.log(numbers);
