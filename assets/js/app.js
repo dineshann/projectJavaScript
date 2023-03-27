@@ -101,19 +101,62 @@
 // Have to assign a value
 // const greeting;
 
-const person = {
-    name: 'Dinesh',
-    age: 30
+// const person = {
+//     name: 'Dinesh',
+//     age: 30
+// }
+
+// person.name = 'Srilatha';
+// person.age = 22;
+
+// // console.log(person);
+
+// const numbers = [1,2,3,4,5];
+// numbers.push(6,7);
+// // we can not declare a brand new array
+// // numbers = [1,2,3,4,5,6,7,8];
+
+// console.log(numbers);
+
+
+/* PRIMITIVE TYPES */
+// String
+const name = 'Dinesh B'
+console.log(typeof name);
+
+// Number
+const age = 30;
+console.log(typeof age);
+
+// Boolean
+const hasKids = true;
+console.log(typeof hasKids);
+
+// NUll
+const car = null;
+console.log(typeof car);
+
+// Undefined
+let test;
+console.log(test);
+
+// Symbol
+const sym = Symbol();
+console.log(sym);
+
+/* REFERENCE TYPES - Objects */
+//Array
+const hobbies = ['Movie', 'Music']
+console.log(typeof hobbies);
+
+// Object literal
+const address = {
+    city: 'Bengaluru',
+    state: 'KA'
 }
+console.log(typeof address);
 
-person.name = 'Srilatha';
-person.age = 22;
-
-// console.log(person);
-
-const numbers = [1,2,3,4,5];
-numbers.push(6,7);
-// we can not declare a brand new array
-// numbers = [1,2,3,4,5,6,7,8];
-
-console.log(numbers);
+// Date
+const today = new Date();
+console.log(today);
+console.log(typeof today);
