@@ -119,44 +119,88 @@
 // console.log(numbers);
 
 
-/* PRIMITIVE TYPES */
-// String
-const name = 'Dinesh B'
-console.log(typeof name);
+// /* PRIMITIVE TYPES */
+// // String
+// const name = 'Dinesh B'
+// console.log(typeof name);
 
-// Number
-const age = 30;
-console.log(typeof age);
+// // Number
+// const age = 30;
+// console.log(typeof age);
 
-// Boolean
-const hasKids = true;
-console.log(typeof hasKids);
+// // Boolean
+// const hasKids = true;
+// console.log(typeof hasKids);
 
-// NUll
-const car = null;
-console.log(typeof car);
+// // NUll
+// const car = null;
+// console.log(typeof car);
 
-// Undefined
-let test;
-console.log(test);
+// // Undefined
+// let test;
+// console.log(test);
 
-// Symbol
-const sym = Symbol();
-console.log(sym);
+// // Symbol
+// const sym = Symbol();
+// console.log(sym);
 
-/* REFERENCE TYPES - Objects */
-//Array
-const hobbies = ['Movie', 'Music']
-console.log(typeof hobbies);
+// /* REFERENCE TYPES - Objects */
+// //Array
+// const hobbies = ['Movie', 'Music']
+// console.log(typeof hobbies);
 
-// Object literal
-const address = {
-    city: 'Bengaluru',
-    state: 'KA'
-}
-console.log(typeof address);
+// // Object literal
+// const address = {
+//     city: 'Bengaluru',
+//     state: 'KA'
+// }
+// console.log(typeof address);
 
-// Date
-const today = new Date();
-console.log(today);
-console.log(typeof today);
+// // Date
+// const today = new Date();
+// console.log(today);
+// console.log(typeof today);
+
+
+/* Type Conversion */
+let val;
+
+// Number to String
+val = String(5);
+val = String(4+10)
+//Bool to String
+val = String(true);
+// Date to String
+val = String(new Date());
+// Array to String
+val = String([1,2,3,4]);
+
+// toString()
+val = (5).toString();
+val = (true).toString();
+
+// String to number
+val = Number('5');
+val = Number(true);
+val = Number(false);
+val = Number(null);
+val = Number('Hello');              // Nan(Not a Number)
+val = Number([1,2,3,4]);
+
+val = parseInt('100.50');
+val = parseFloat('100.30');
+
+// // Output
+// console.log(val);
+// console.log(typeof val);
+// // console.log(val.length);
+// console.log(val.toFixed(2));
+
+/* Type Co-version */
+const val1 =  String(5);
+const val2 = 6;
+// const sum = val1 + val2;
+const sum = Number(val1 + val2);
+
+console.log(sum);
+console.log(typeof sum);
