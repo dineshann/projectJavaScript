@@ -163,44 +163,79 @@
 
 
 /* Type Conversion */
+// let val;
+
+// // Number to String
+// val = String(5);
+// val = String(4+10)
+// //Bool to String
+// val = String(true);
+// // Date to String
+// val = String(new Date());
+// // Array to String
+// val = String([1,2,3,4]);
+
+// // toString()
+// val = (5).toString();
+// val = (true).toString();
+
+// // String to number
+// val = Number('5');
+// val = Number(true);
+// val = Number(false);
+// val = Number(null);
+// val = Number('Hello');              // Nan(Not a Number)
+// val = Number([1,2,3,4]);
+
+// val = parseInt('100.50');
+// val = parseFloat('100.30');
+
+// // // Output
+// // console.log(val);
+// // console.log(typeof val);
+// // // console.log(val.length);
+// // console.log(val.toFixed(2));
+
+// /* Type Co-version */
+// const val1 =  String(5);
+// const val2 = 6;
+// // const sum = val1 + val2;
+// const sum = Number(val1 + val2);
+
+// console.log(sum);
+// console.log(typeof sum);
+
+/* Numbers and The Math Object */
+const num1 = 100;
+const num2 = 50;
 let val;
 
-// Number to String
-val = String(5);
-val = String(4+10)
-//Bool to String
-val = String(true);
-// Date to String
-val = String(new Date());
-// Array to String
-val = String([1,2,3,4]);
+// Simple math with numbers
+val = num1 + num2;
+val = num1 * num2;
+val = num1 - num2;
+val = num1 / num2;
+val = num1 % num2;          // modulus operator
 
-// toString()
-val = (5).toString();
-val = (true).toString();
 
-// String to number
-val = Number('5');
-val = Number(true);
-val = Number(false);
-val = Number(null);
-val = Number('Hello');              // Nan(Not a Number)
-val = Number([1,2,3,4]);
+// Math Objecct
+val = Math.PI;
+val = Math.E;
+val = Math.round(2.4);                          // Round up
+val = Math.ceil(2.4);                           // Round up UP
+val = Math.floor(2.9);                          // Round up DOWN
+val = Math.sqrt(64);                            // Square
+val = Math.abs(-4);                             // Absolute Value 
+val = Math.pow(10, 2);                          // Power-of Value
+val = Math.min(2,5,88,55,66,1,100,-8);          // Min
+val = Math.max(2,5,88,55,66,1,100,-8);          // Max
 
-val = parseInt('100.50');
-val = parseFloat('100.30');
+val = Math.random();                            // Random decimal
+val = Math.random() * 20;                       // Random number with 0
+val = Math.random() * 20 + 1;                   // Random number without 0 
 
-// // Output
-// console.log(val);
-// console.log(typeof val);
-// // console.log(val.length);
-// console.log(val.toFixed(2));
+val = Math.floor(Math.random() * 20 + 1);       // Without decimal
 
-/* Type Co-version */
-const val1 =  String(5);
-const val2 = 6;
-// const sum = val1 + val2;
-const sum = Number(val1 + val2);
 
-console.log(sum);
-console.log(typeof sum);
+
+console.log(val);
