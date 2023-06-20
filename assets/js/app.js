@@ -206,36 +206,51 @@
 // console.log(typeof sum);
 
 /* Numbers and The Math Object */
-const num1 = 100;
-const num2 = 50;
+// const num1 = 100;
+// const num2 = 50;
+// let val;
+
+// // Simple math with numbers
+// val = num1 + num2;
+// val = num1 * num2;
+// val = num1 - num2;
+// val = num1 / num2;
+// val = num1 % num2;          // modulus operator
+
+
+// // Math Objecct
+// val = Math.PI;
+// val = Math.E;
+// val = Math.round(2.4);                          // Round up
+// val = Math.ceil(2.4);                           // Round up UP
+// val = Math.floor(2.9);                          // Round up DOWN
+// val = Math.sqrt(64);                            // Square
+// val = Math.abs(-4);                             // Absolute Value 
+// val = Math.pow(10, 2);                          // Power-of Value
+// val = Math.min(2,5,88,55,66,1,100,-8);          // Min
+// val = Math.max(2,5,88,55,66,1,100,-8);          // Max
+
+// val = Math.random();                            // Random decimal
+// val = Math.random() * 20;                       // Random number with 0
+// val = Math.random() * 20 + 1;                   // Random number without 0 
+
+// val = Math.floor(Math.random() * 20 + 1);       // Without decimal
+
+
+// console.log(val);
+
+/* String Methods & Concatenation */
+const firstName = 'Dinesh';
+const lastName = 'Babu';
+
 let val;
 
-// Simple math with numbers
-val = num1 + num2;
-val = num1 * num2;
-val = num1 - num2;
-val = num1 / num2;
-val = num1 % num2;          // modulus operator
+val = firstName + lastName;
 
-
-// Math Objecct
-val = Math.PI;
-val = Math.E;
-val = Math.round(2.4);                          // Round up
-val = Math.ceil(2.4);                           // Round up UP
-val = Math.floor(2.9);                          // Round up DOWN
-val = Math.sqrt(64);                            // Square
-val = Math.abs(-4);                             // Absolute Value 
-val = Math.pow(10, 2);                          // Power-of Value
-val = Math.min(2,5,88,55,66,1,100,-8);          // Min
-val = Math.max(2,5,88,55,66,1,100,-8);          // Max
-
-val = Math.random();                            // Random decimal
-val = Math.random() * 20;                       // Random number with 0
-val = Math.random() * 20 + 1;                   // Random number without 0 
-
-val = Math.floor(Math.random() * 20 + 1);       // Without decimal
-
+//Concatenation
+val = firstName + ' ' + lastName;
 
 
 console.log(val);
+
+console.log(val)

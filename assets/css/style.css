@@ -9,6 +9,9 @@
 }
 
 body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   position: relative;
   width: 100%;
   height: auto;
@@ -16,7 +19,12 @@ body {
   font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
 }
+body .container {
+  width: min(100% - 30px, 1024px);
+  margin-inline: auto;
+}
 body .dCard {
+  flex: 1 0 200px;
   padding: 1.4rem 1rem;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   border-radius: 0.75rem;
@@ -50,6 +58,43 @@ header h1 {
 }
 .console__title h3 {
   font-size: 2.5rem;
+}
+.yin-yang {
+  width: 50px;
+  box-sizing: content-box;
+  height: 25px;
+  background: #fff;
+  border-color: #333;
+  border-style: solid;
+  border-width: 2px 2px 26px 2px;
+  border-radius: 100%;
+  position: relative;
+}
+
+.yin-yang:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: #fff;
+  border: 9.4px solid #333;
+  border-radius: 100%;
+  width: 6.25px;
+  height: 6.25px;
+  box-sizing: content-box;
+}
+
+.yin-yang:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #333;
+  border: 9.4px solid #fff;
+  border-radius: 100%;
+  width: 6.25px;
+  height: 6.25px;
+  box-sizing: content-box;
 }
 
 /*# sourceMappingURL=style.css.map */

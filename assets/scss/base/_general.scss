@@ -4,6 +4,9 @@
 }
 
 body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     position: relative;
     width: 100%;
     height: auto;
@@ -11,7 +14,13 @@ body {
     font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
 
+    .container {
+        width: min(100% - 30px, 1024px);
+        margin-inline: auto;
+    }
+
     .dCard {
+        flex: 1 0 200px;
         padding: 1.4rem 1rem;
         box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
         border-radius: 0.75rem;
